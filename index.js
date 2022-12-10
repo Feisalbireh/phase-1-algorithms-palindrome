@@ -1,10 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  const palindromeWord = palindrome(word);
+  if (word === palindromeWord) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+function palindrome(word) {
+  return word.split("").reverse().join("");
+}
 /* 
   Add your pseudocode here
-*/
+//  if palindromeWord function returns same as input 
+//     return true
+//     if not 
+//     return false
 
 /*
   Add written explanation of your solution here
